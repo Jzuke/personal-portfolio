@@ -1,7 +1,7 @@
 const myProjects = [{
     title: "MTA-tracker",
     info: "tech: Javascript, Nodejs, Raspberry Pi, C++, lumber",
-    description: "This is an MTA tracker description",
+    description: "Live transit tracker for NYC",
     imgCaptions: {
       header: "Adding to the greenery",
       one:"Pile of stuff ( LED Matrices, Raspberry Pi, wires, other stuff )",
@@ -25,7 +25,7 @@ const myProjects = [{
   {
     title: "Creative-Writing-App",
     info: "tech: Javascript, webpack, localStorage, HTML, CSS\u2014migrating to React and Firebase",
-    description: "This is a creative writing app description",
+    description: "A web app for creative writing",
     imgCaptions: {
       header: "Minimalist word editor",
       one: "Blank page, no entries",
@@ -36,7 +36,7 @@ const myProjects = [{
       site: "https://boring-kirch-8243fd.netlify.app/",
       github: "https://github.com/Jzuke/writing-app"
     },
-    tech:"Javascript, HTML, CSS,",
+    tech:"Javascript, HTML, CSS, webpack, localStorage",
     summary: {
       paraOne:`The purpose of this app is to be a catalyst for creative writing. The methodology I use here is adapted from Pat Pattison"s book 
       Songwriting Without Boundaries. I originally built this for myself and other writer friends to practice a specific type of writing called object
@@ -50,7 +50,7 @@ const myProjects = [{
   {
     title: "WSJ-Snapchat-Discover",
     info: "tools: Adobe CC",
-    description: "This is a WSJ Snapchat description",
+    description: "Motion graphics created for WSJ's Snapchat Discover page",
     imgCaptions: {
       header: "Header image on WSJ Snapchat profile"
     },
@@ -66,7 +66,7 @@ const myProjects = [{
   {
     title: "Teachers-Supporting-Teachers",
     info: "tech/tools: Wordpress, HTML, CSS, Sketch, Photoshop",
-    description: "This is a TST description",
+    description: "Redesigned website for non-profit Teachers Supporting Teachers",
     imgCaptions: {
       header: "Updated homepage",
       one: "Updated internal page",
@@ -89,7 +89,7 @@ const myProjects = [{
   {
     title: "Art-Basel-Banana(s)",
     info: "tech: React, CSS, HTML",
-    description: "Bananas",
+    description: "My artistic take on the infamous Art Basel Banana",
     imgCaptions: {
       header: "A taped banana",
       one:"Multiple taped bananas ",
@@ -110,15 +110,15 @@ const myProjects = [{
   {
     title: "Snapchat-Window-Mural",
     info: "tech: Post-it notes, Ricoh printer",
-    description: "Window mural",
+    description: "A scannable Snapchat code made out of post-its",
     imgCaptions: {
       header: "The final product (mostly not photoshopped)",
       one: "Not pictured\u2014my lack of sanity after sticking that many stickies",
-      three: "Lots of iterations"
+      two: "Lots of iterations"
     },
     links: {
       siteType:"Medium article",
-      site: " ",
+      site: "https://ideas.redpepper.land/how-to-post-digital-content-on-windows-91ca86834776",
     },
     tech:"Post-it notes, Ricoh printer",
     summary:{
