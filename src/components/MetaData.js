@@ -36,4 +36,4 @@ const MetaData = (props) => {
     )
 }
 
-export { MetaData as default}
+export { MetaData as default }
