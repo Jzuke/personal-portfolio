@@ -91,8 +91,8 @@ const myProjects = [{
     info: "tech: React, CSS, HTML",
     description: "Bananas",
     imgCaptions: {
-      one: "A taped banana",
-      two:"Multiple taped bananas ",
+      header: "A taped banana",
+      one:"Multiple taped bananas ",
     },
     links: {
       siteType:"Website",
@@ -112,7 +112,9 @@ const myProjects = [{
     info: "tech: Post-it notes, Ricoh printer",
     description: "Window mural",
     imgCaptions: {
-      one: "Real-Time MTA tracker"
+      header: "The final product (mostly not photoshopped)",
+      one: "Not pictured\u2014my lack of sanity after sticking that many stickies",
+      three: "Lots of iterations"
     },
     links: {
       siteType:"Medium article",
