@@ -1,0 +1,187 @@
+// Homepage
+
+.main-container {
+  top:0;
+  display:flex;
+  margin:auto;
+  height:100vh;
+  width:100vw;
+}
+
+.left-container {
+  display:flex;
+  position:relative; 
+  z-index:5; 
+  width:50%;
+  height:100vh;
+  background-color: $jz_blue;
+}
+  
+.right-container {
+  width:50%;
+  overflow:auto;
+  padding-top:5rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.project-entry-container {
+  margin:auto;
+  margin-bottom:6rem;
+  margin-left:$xl-size;
+}
+
+// Nav
+
+.nav-container {
+  position: absolute;
+  top:$xl-size;
+  right:$xl-size;
+  z-index:100;
+  ul a:first-child{
+      margin-right:$m-size;
+  }
+}
+
+// Project Pages
+
+.project-page-container {
+  display:grid;
+  grid-template-columns: repeat(minmax(240px, 1fr));
+  column-gap: 2rem;
+  max-width: 94rem;
+  margin: $xl-size auto;
+  padding:0 $xl-size;
+}
+
+.project-page-content{
+  grid-column-start:1;
+  grid-column-end:9;
+  margin-bottom: $xl-size;
+}
+
+.project-page-title, .project-page-summary {
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
+.header-img{
+  grid-column-start: 1;
+  grid-column-end: 13;
+  & img{
+    width:100%;
+    height:auto;  
+  }
+}
+
+.header-image {
+  grid-column-start:1;
+  grid-column-end: 12;
+  & img {
+    width:100%;
+    height:auto;
+  }
+}
+
+.body-image {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  & img {
+    width:100%;
+    height:auto;
+  }
+}
+
+// Metadata Component
+.metadata-info-container {
+  margin-bottom:$s-size;
+}
+
+
+.metadata-container {
+  height: 0;
+  grid-column-start:10;
+  grid-column-end:13;
+  position:sticky;
+  top:5rem;
+}
+
+
+//Contact component
+
+.contact-container {
+  width:100%;
+  position:absolute;
+  bottom:$xl-size;
+  left:$xl-size;
+  vertical-align: bottom;
+  & li {
+    cursor:pointer;
+    display:inline-block;
+    margin-right:$s-size;
+    text-decoration: underline;
+  }
+}
+
+.about-container {
+  position:absolute;
+  display:flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.summary {
+  grid-column-start:1;
+  grid-column-end:9;
+  margin-bottom: $m-size;
+}
+
+
+// MOBILE 
+
+.main-container__mobile {
+  display:flex;
+}
+
+.top-container {
+  position:absolute;
+  height:50%;
+}
+
+// @media (max-width:50rem){
+//   .left-container {
+//     display:none;
+//   }
+// }
+
+.home {
+  background-color:$jz-blue;
+}
+
+//Snapchat Page
+
+
+.full-grid {
+  grid-column-start: 1 !important;
+  grid-column-end: 12 !important;
+}
+
+
+.stories.list {
+  grid-column-start:2;
+  grid-column-end: 11; 
+  overflow:visible;
+  white-space: normal;
+  
+  & .story  {
+    display:inline-block;
+    margin:0;
+    & > .item-link > .item-preview {
+      max-width:100%;
+      max-height:100%;
+      width: 20rem;
+      height:20rem;
+    }
+  } 
+}
+

@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    overflow: hidden;
+    height: 100%;
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: $off-white;
+    height:100%;
+    overflow: auto;
+  }

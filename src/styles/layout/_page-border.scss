@@ -1,0 +1,40 @@
+.frame-border-home {
+    z-index:11;
+    background-color: $off-white;
+    position: fixed;
+  }
+
+.frame-border-project { 
+    z-index:11;
+    background-color: $jz-blue;
+    position: fixed;
+  }
+  
+.frame-border-top {
+    top: 0;
+    left: 0;
+    right: 0;
+    height:10px;
+  }
+  
+.frame-border-right {
+    top: -50px;
+    right: 0;
+    bottom: -50px;
+    width:10px;
+  }
+  
+.frame-border-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:10px;
+  }
+  
+.frame-border-left {
+    top: -50px;
+    left: 0;
+    bottom: -50px;
+    width:10px;
+  }
+  

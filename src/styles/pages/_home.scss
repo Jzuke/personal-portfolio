@@ -1,0 +1,88 @@
+.intro {
+  left:$xl-size;
+  top: 50%;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+  
+.project-title {
+  margin-bottom:$xs-size;
+  transition:all .5s;
+  cursor:pointer;
+}
+  
+.project-title:hover {
+  transform: translateX(20px);
+  color: $jz-blue;
+}
+
+.project-title::before {
+  content:"";
+  width:0;
+  transform: translateY(-5px);
+  height:30px;
+  background: url("/img/wave.svg");
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 10px 5px; 
+  animation: move 15s linear infinite;
+  animation-direction: reverse;
+  -webkit-animation: move 25s linear infinite;
+  animation-play-state: play;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  left:-55px;
+  position:absolute;
+  transition: width .5s cubic-bezier(.215,.61,.355,1);
+}
+
+  
+.project-title:hover::before {
+  width:42px;
+}
+
+.clickswitch {
+  cursor:pointer;
+}
+  
+  
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $space-cadet;
+  &:visited {
+    color: $space-cadet;
+  }
+}
+  
+
+@-webkit-keyframes move {
+  from {
+      background-position: 2px 19px;
+    }
+    to {
+      background-position: 500px 19px;
+    }
+  }
+  
+  @keyframes move {
+  from {
+      background-position: 2px 19px;
+    }
+    to {
+      background-position: 500px 19px;
+    }
+  }
+
+
+  
+  
+  
+  

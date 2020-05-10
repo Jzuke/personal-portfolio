@@ -1,0 +1,107 @@
+.intro {
+    color:$space-cadet;
+    text-align: left;
+    font-size: 3.15vw;
+    font-family: $font;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.project-title {
+    font-size: $l-size;
+    font-family: $font;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.project-info {
+    color:$space-cadet;
+    font-family: $font;     
+    font-weight: 300;
+    font-style: normal;
+    font-size: $s-size;
+}
+
+.project-entry {
+    color:$space-cadet;
+}
+   
+
+.nav-container a{
+    font-family: $font;
+    font-weight: 300;
+    font-size: $m-size;
+}
+
+.project-page-title {
+    color:$space-cadet;
+    font-size: $xl-size;
+    font-family: $font;
+    font-weight:900;
+}
+
+.project-page-summary {
+    color:$space-cadet;
+    font-size:$m-size;
+    font-family: $font;
+    font-weight: 500;
+}
+
+figcaption {
+    color: #999;
+    font-size:$s-size;
+    font-family: $font;
+    font-weight: 200;
+    text-align: center;
+}
+
+h4 {
+    color:#999;
+    font-family: $font;
+    font-size: $m-size;
+    font-weight:300;    
+}
+
+.metadata-info-container a, p {
+    font-family: $font;
+    font-size:$s-size;
+    font-weight:200;
+}
+
+.project-page-content {
+    font-family:$font;
+    font-size:$m-size;
+    font-weight: 200;
+    line-height: 3rem;
+}
+
+h3 {
+	font-family: $font;
+	font-weight: 300;
+    font-size: $m-size;
+}
+
+.about-copy {
+    font-family:$font;
+    font-size: 2rem;
+    line-height:$l-size;
+    font-weight:200;
+    width:75%;
+}
+
+.about-copy__mobile {
+    font-family:$font;
+    font-size: $m-size;
+    line-height: 2.4rem;
+    font-weight:200;
+    width:75%;
+}
+
+.contact-container {
+    font-family: $font;
+    font-size: $s-size;
+}
+
+p {
+    color:$space-cadet;
+}
