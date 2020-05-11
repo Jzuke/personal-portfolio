@@ -3,6 +3,7 @@ import myProjects from '../data/myProjects'
 import SnapchatPage from './SnapchatPage'
 import MetaData from './MetaData'
 import Nav from './Nav'
+import Contact from './Contact'
 import { useLocation } from 'react-router-dom'
 
 const ProjectPage = () => {
@@ -70,6 +71,8 @@ const ProjectPage = () => {
                             <figcaption>{project.imgCaptions.five}</figcaption> 
                         </figure>)
                       }
+
+                      <Contact position={'bottom'}/>
         </div>
         
         <span className='frame-border-project frame-border-top'></span>

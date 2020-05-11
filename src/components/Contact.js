@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = (props) => {
     return(
-        <div className="contact-container">
+        <div className={`contact-container ${props.position}`}>
             <ul>
                 <li><a href="mailto:jakezuke@gmail.com">Email</a> </li>
                 <li><a href="https://www.linkedin.com/in/jakezuke/" target="blank">Linkedin</a></li>

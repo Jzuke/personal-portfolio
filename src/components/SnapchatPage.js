@@ -1,6 +1,7 @@
         import React, { Component } from 'react'
         import Zuck from 'zuck.js'
         import Nav from './Nav'
+        import Contact from './Contact'
         import myProjects from '../data/myProjects'
 
         export default class SnapchatPage extends Component {
@@ -259,6 +260,7 @@
                 <div ref={node => (this.storiesElement = node)} id="stories-react" className="storiesWrapper">
                   {timelineItems}
                 </div>
+                <Contact position={'bottom'}/>
               </div>
             );
           }

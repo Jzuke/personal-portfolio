@@ -10,12 +10,15 @@
 
 
 	@media(max-width: 1101px){
+
 		.show-for-mobile {
 			display: block;
 		}
+
 		.show-for-desktop {
 			display: none;
 		}
+
 		.main-container {
 			display:block;
 		}
@@ -25,20 +28,22 @@
 			height: 50%;
 			align-items: center;
 
-			.intro {
-				top:auto;
-				width:calc(100% - 20px);
-				text-align: center;
-				padding-left:0;
-				font-size: 2.4rem;
-				margin-left:-38px;
-				
-			}
+		.intro {
+			top:auto;
+			width:calc(100% - 20px);
+			text-align: center;
+			padding-left:0;
+			font-size: 2.4rem;
+			margin-left:-38px;
+			
+		}
 		}
 
 		.about-container__mobile {
 			position: absolute;
 			margin: auto;
+			padding-bottom:5rem;
+			overflow:auto;
 			
 			.about-copy__mobile {
 				margin: auto;
@@ -49,17 +54,17 @@
 			width: 100%;
 			height: 50%;
 
-			.project-title {
-				width: 100%;
-				margin: auto;
-				font-size: 2.4rem;
-				margin-bottom: $xs-size;
-			}
+		.project-title {
+			width: 100%;
+			margin: auto;
+			font-size: 2.4rem;
+			margin-bottom: $xs-size;
+		}
 			
-			.project-entry-container {
-				margin-left:3rem;
-				margin-right:3rem;
-			}
+		.project-entry-container {
+			margin-left:3rem;
+			margin-right:3rem;
+		}
 		}
 
 		.nav-container {
@@ -76,7 +81,7 @@
 		}
 		.project-page-container, .snapchat-page-container {
 			display:block; 
-			margin-bottom:20rem;
+			margin-bottom:15rem;
 			margin-top:8rem;
 		}
 
@@ -88,14 +93,21 @@
 			text-align: center;
 			left:0;
 		}
+
 		ul {
 			display:inline-block;
 		}
+
 		.metadata-container {
 			display:none;
+			& .metadata-info-container p {
+				line-height:2rem;
+				width:200px;
+			}
 		}
 		.metadata-container__mobile {
-			width:100%;
+			width: 100%;
+			z-index: 2;
 			border-top: 2px solid $jz-blue;
 			display:flex;
 			justify-content: center;
@@ -105,11 +117,12 @@
 			position:absolute;
 			background-color:$off-white;
 			& :first-child {
-				margin-right:$l-size;
+				margin-right:$s-size;
 			}
-			 & .metadata-info-container:first-child {
-				 margin-bottom: $s-size;
-			 }
+			& .metadata-info-container {
+				width:12rem;
+		
+			}
 		}
 
 
@@ -122,10 +135,7 @@
 			background-color: $jz-blue !important ;
 		  }
 
-		.metadata-info-container p {
-			line-height:2rem;
-			width:200px;
-		}
+		
 	}
 
 	@media(max-width: 712px) {
@@ -139,5 +149,8 @@
 				  height: 12rem !important;
 				}
 			  } 
-			
+		.bottom {
+			width: 100vw; 
+			margin-left: calc((100% - 100vw) / 2); 
+		}	
 	}
