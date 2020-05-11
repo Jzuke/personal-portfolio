@@ -92,6 +92,9 @@
 		.contact-container {
 			text-align: center;
 			left:0;
+			& :last-child {
+				margin-right:0;
+			}
 		}
 
 		ul {
