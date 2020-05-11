@@ -38,6 +38,7 @@
   top:$xl-size;
   right:$xl-size;
   z-index:100;
+  overflow: hidden;
   ul a:first-child{
       margin-right:$m-size;
   }
