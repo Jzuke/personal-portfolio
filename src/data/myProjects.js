@@ -42,7 +42,7 @@ const myProjects = [{
       Songwriting Without Boundaries. I originally built this for myself and other writer friends to practice a specific type of writing called object
       writing. The app generates a random prompt based on a list of adjectives and verbs and then starts a timed writing session.`,
       paraTwo: `I'm currently expanding it out into something more robust which will include the option to choose different types of writing exercises
-      along with just being an empty space to journal your thoughts. The current iteration uses Javascript and localStorage, but I"m transiting to a Firebase
+      along with just being an empty space to journal your thoughts. The current iteration uses Javascript and localStorage, but I'm transiting to a Firebase
       database and React. Also working on workshopping an actual name for this thing.`
     }
 },

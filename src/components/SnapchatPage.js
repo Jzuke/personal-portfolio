@@ -247,7 +247,7 @@
                     <img className="responsive" src={`../img/${project.title}/header.jpg`}  alt={`${project.title} header`} />
                     <figcaption>{project.imgCaptions.header}</figcaption>
                 </figure>
-                <h3>Summary</h3>
+                <h3 className='summary'>Summary</h3>
                 <p className="project-page-content full-grid">{project.summary.paraOne}</p>
                 <p className="project-page-content full-grid">{project.summary.paraTwo}</p>
                 <h3 className="project-page-content full-grid show-for-desktop" style={{fontWeight:300}}>Click any image below for full story: </h3>
