@@ -239,10 +239,10 @@
             
         
             return (
-              <div className="project-page-container">
+              <div className="snapchat-page-container">
                 <Nav />
-                <h1 className="project-page-title" style={{gridColumnEnd: 12}}>{project.title.replace(/-/g, ' ')}</h1>
-                <h2 className="project-page-summary ">{project.description}</h2>
+                <h1 className="project-page-title full-grid" style={{gridColumnEnd: 12}}>{project.title.replace(/-/g, ' ')}</h1>
+                <h2 className="project-page-summary full-grid ">{project.description}</h2>
                 <figure className="header-img">
                     <img className="responsive" src={`../img/${project.title}/header.jpg`}  alt={`${project.title} header`} />
                     <figcaption>{project.imgCaptions.header}</figcaption>

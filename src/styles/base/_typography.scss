@@ -15,7 +15,8 @@
 }
 
 .project-info {
-    color:$space-cadet;
+    color: $space-cadet;
+    line-height: 2rem;
     font-family: $font;     
     font-weight: 300;
     font-style: normal;
@@ -34,14 +35,15 @@
 }
 
 .project-page-title {
-    color:$space-cadet;
+    color: $space-cadet;
     font-size: $xl-size;
     font-family: $font;
     font-weight:900;
 }
 
 .project-page-summary {
-    color:$space-cadet;
+    color: $space-cadet;
+    line-height: 2.5rem;
     font-size:$m-size;
     font-family: $font;
     font-weight: 500;
@@ -104,4 +106,13 @@ h3 {
 
 p {
     color:$space-cadet;
+}
+
+.metadata-info-container{
+    & p {
+        line-height: 2rem;
+    }
+    & ul, p {
+        font-size: $s-size;
+    }
 }

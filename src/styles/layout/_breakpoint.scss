@@ -30,7 +30,7 @@
 				width:calc(100% - 20px);
 				text-align: center;
 				padding-left:0;
-				font-size: $l-size;
+				font-size: 2.4rem;
 				margin-left:-38px;
 				
 			}
@@ -52,8 +52,13 @@
 			.project-title {
 				width: 100%;
 				margin: auto;
-				font-size: $l-size;
+				font-size: 2.4rem;
 				margin-bottom: $xs-size;
+			}
+			
+			.project-entry-container {
+				margin-left:3rem;
+				margin-right:3rem;
 			}
 		}
 
@@ -69,7 +74,7 @@
 			padding-top: $m-size;
 			padding-right: $m-size;
 		}
-		.project-page-container {
+		.project-page-container, .snapchat-page-container {
 			display:block; 
 			margin-bottom:20rem;
 			margin-top:8rem;
@@ -102,21 +107,37 @@
 			& :first-child {
 				margin-right:$l-size;
 			}
+			 & .metadata-info-container:first-child {
+				 margin-bottom: $s-size;
+			 }
 		}
 
+
 		.stories {
-			width: 424px;
+			width: 646px;
 			margin:auto;
 		}
 
 		.mobile-blue {
 			background-color: $jz-blue !important ;
 		  }
+
+		.metadata-info-container p {
+			line-height:2rem;
+			width:200px;
+		}
 	}
 
-	@media(max-width: 500px) {
+	@media(max-width: 712px) {
 		.stories {
-			width: 200px;
+			width: 264px;
 			margin: auto;
-		}
+				& .item-preview {
+				  max-width:100%;
+				  max-height:100%;
+				  width: 12rem !important;
+				  height: 12rem !important;
+				}
+			  } 
+			
 	}

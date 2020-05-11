@@ -1,3 +1,21 @@
-div > .info > .time{
+.time  {
     display: none !important;
+}
+
+.close {
+    background-color:white !important;
+    border-radius:100%;
+    height:5rem !important;
+    width:5rem !important;
+    position: absolute;
+    right:2rem;
+    top:2rem;
+    text-shadow: none;
+}
+
+.close {
+    display: block !important;
+}
+.back {
+    display:none !important;
 }
