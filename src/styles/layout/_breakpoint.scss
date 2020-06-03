@@ -92,6 +92,10 @@
 			font-size: $l-size;
 		}
 
+		.project-title::before {
+			content: none;
+		}
+
 		.contact-container {
 			text-align: center;
 			left:0;

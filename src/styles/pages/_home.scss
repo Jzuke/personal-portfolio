@@ -4,6 +4,9 @@
   position: absolute;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  &::selection {
+    background:$jz-blue;
+  }
 }
   
 .project-title {
@@ -46,6 +49,9 @@
 
 .clickswitch {
   cursor:pointer;
+  &::selection {
+    background-color:$jz-blue;
+  }
 }
   
   
