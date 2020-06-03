@@ -13,7 +13,7 @@ const About = () => {
     config: {duration:1500 , easing: easings.easeCubicOut}  
 })
 
-const propsMobile = useSpring({from: { left: '0%', top: '50%', width: '100%', height: '0%', background: '#1ADAFF' },
+const propsMobile = useSpring({from: { left: '0%', top: '0%', width: '100%', height: '0%', background: '#1ADAFF' },
     to: async (next, cancel) => {
         await next({left: '0%', top: '50%', width: '100%', height: '50%', background: '#1ADAFF' })},
     ref: mobile_containerRef,
