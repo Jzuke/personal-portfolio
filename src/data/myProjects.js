@@ -1,4 +1,39 @@
-const myProjects = [{
+const myProjects = [
+  {
+    title: "WSJ-Noted.",
+    info: "role: Product Designer",
+    description: "A digital magazine focused on what it's like to be young in today's world",
+    imgCaptions: {
+      header: "Wordmark for WSJ Noted.",
+      one:"Section Front (Landing Page)",
+      two:"One style of an article header",
+      three:"Article body w/ photo"
+    },
+    links: {
+      siteType: "WSJ Noted.",
+      site: "https://www.wsj.com/noted",
+    },
+    role: "Product Designer",
+    summary:{
+      paraOne:`WSJ Noted. is a new product from WSJ–a digital magazine that reports on what it's like to be young
+      in today's world. I was the product designer for this project, working with design directors and an international team 
+      of engineers to create a new experience for a younger audience.`,
+      paraTwo:`We created a new brand that could attract young readers and fits within the current 
+      WSJ visual identity. We ran a branding workshop and got user validation from our UX and marketing teams to 
+      solidify the final direction of visual elements to be used. With branding in place, 
+      existing templates and components from other WSJ products were adapted and modified accordingly to match the new style.`,
+      paraThree:`The approach for the WSJ Noted. designs revolved around the reusability of components 
+      that existed within the WSJ product ecosystem, along with a system to create new components that can be shared 
+      back into that ecosystem. Based on user research, we were able to map the habits of our target audience with
+      how they currently use our core product offering in order to find the best existing components to use. 
+      Filling in gaps of what was missing allowed us to craft a more enjoyable and user friendly experience.`,
+      paraFour: `Along with the new content being produced, WSJ Noted. is acting as an incubator for 
+      new forms of storytelling and features. It has also allowed us to solidify a direction for the 
+      larger WSJ design system based on common components that were used in building this product.`
+      
+    }
+  },
+  {
     title: "MTA-tracker",
     info: "tech: Javascript, Nodejs, Raspberry Pi, C++, lumber",
     description: "Live transit tracker for NYC transit",
@@ -20,8 +55,6 @@ const myProjects = [{
       bus schedule. It's built using a Raspberry Pi with a few Node.js and C++ libraries to pull in the data and connect it to the LED matrices.`
     }
   },
-
-
   {
     title: "Creative-Writing-App",
     info: "tech: Javascript, webpack, localStorage, HTML, CSS\u2014migrating to React and Firebase",
@@ -49,7 +82,7 @@ const myProjects = [{
 
   {
     title: "WSJ-Snapchat-Discover",
-    info: "tools: Adobe CC",
+    info: "role: Motion Designer",
     description: "Motion graphics created for WSJ's Snapchat Discover page",
     imgCaptions: {
       header: "Header image on WSJ Snapchat profile"

@@ -96,6 +96,11 @@
 			content: none;
 		}
 
+		.project-title:hover {
+			transform: none;
+			color: $space-cadet;
+		  }
+
 		.contact-container {
 			text-align: center;
 			left:0;

@@ -28,6 +28,7 @@ const ProjectPage = () => {
                     <p className="project-page-content">{project.summary.paraOne}</p>
                     {project.summary.paraTwo === undefined ? "" : <p className="project-page-content">{project.summary.paraTwo}</p>}
                     {project.summary.paraThree === undefined ? "" : <p className="project-page-content">{project.summary.paraThree}</p>}
+                    {project.summary.paraFour === undefined ? "" : <p className="project-page-content">{project.summary.paraFour}</p>}
                
 
                 
