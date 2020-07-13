@@ -29,8 +29,8 @@ const MetaData = (props) => {
         </div>
 
         <div className='metadata-info-container'>
-            <h4 className='metadata-info-container__title'>Tech &amp; tools</h4>
-            <p>{props.projectData.tech}</p>
+            <h4 className='metadata-info-container__title'>{props.projectData.tech === undefined ? `Role` : `Tech & Tools`}</h4>
+            <p>{props.projectData.tech === undefined ? props.projectData.role : props.projectData.tech}</p>
         </div>
     </div>
     </>
