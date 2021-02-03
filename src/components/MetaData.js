@@ -1,40 +1,77 @@
-import React from 'react'
+import React from "react";
 
 const MetaData = (props) => {
-    return (
+  return (
     <>
-    <div className='metadata-container'>
-        <div className='metadata-info-container'>
-            <h4 className='metadata-info-container__title'>Links</h4>
-            <ul>
-                <li><a target="blank" href={props.projectData.links.site}>{props.projectData.links.siteType}</a></li> <br />
-                {props.projectData.links.github === undefined ? '' : <li><a target="blank" href={props.projectData.links.github}>Github</a></li>}
-            </ul>
-        </div>
-        
-        <div className='metadata-info-container'>
-            <h4 className='metadata-info-container__title'>{props.projectData.tech === undefined ? `Role` : `Tech & Tools`}</h4>
-            <p>{props.projectData.tech === undefined ? props.projectData.role : props.projectData.tech}</p>
-            
-        </div>
-    </div>
-
-    <div className='metadata-container__mobile'>
-        <div className='metadata-info-container'>
-            <h4 className='metadata-info-container__title'>Links</h4>
-            <ul>
-                <li><a target="blank" href={props.projectData.links.site}>{props.projectData.links.siteType}</a></li> <br />
-                {props.projectData.links.github === undefined ? '' : <li><a target="blank" href={props.projectData.links.github}>Github</a></li>}
-            </ul>
+      <div className="metadata-container">
+        <div className="metadata-info-container">
+          <h4 className="metadata-info-container__title">Links</h4>
+          <ul>
+            <li>
+              <a target="blank" href={props.projectData.links.site}>
+                {props.projectData.links.siteType}
+              </a>
+            </li>{" "}
+            <br />
+            {props.projectData.links.github === undefined ? (
+              ""
+            ) : (
+              <li>
+                <a target="blank" href={props.projectData.links.github}>
+                  Github
+                </a>
+              </li>
+            )}
+          </ul>
         </div>
 
-        <div className='metadata-info-container'>
-            <h4 className='metadata-info-container__title'>{props.projectData.tech === undefined ? `Role` : `Tech & Tools`}</h4>
-            <p>{props.projectData.tech === undefined ? props.projectData.role : props.projectData.tech}</p>
+        <div className="metadata-info-container">
+          <h4 className="metadata-info-container__title">
+            {props.projectData.tech === undefined ? `Role` : `Tech & Tools`}
+          </h4>
+          <p>
+            {props.projectData.tech === undefined
+              ? props.projectData.role
+              : props.projectData.tech}
+          </p>
         </div>
-    </div>
+      </div>
+
+      <div className="metadata-container__mobile">
+        <div className="metadata-info-container">
+          <h4 className="metadata-info-container__title">Links</h4>
+          <ul>
+            <li>
+              <a target="blank" href={props.projectData.links.site}>
+                {props.projectData.links.siteType}
+              </a>
+            </li>{" "}
+            <br />
+            {props.projectData.links.github === undefined ? (
+              ""
+            ) : (
+              <li>
+                <a target="blank" href={props.projectData.links.github}>
+                  Github
+                </a>
+              </li>
+            )}
+          </ul>
+        </div>
+
+        <div className="metadata-info-container">
+          <h4 className="metadata-info-container__title">
+            {props.projectData.tech === undefined ? `Role` : `Tech & Tools`}
+          </h4>
+          <p>
+            {props.projectData.tech === undefined
+              ? props.projectData.role
+              : props.projectData.tech}
+          </p>
+        </div>
+      </div>
     </>
-    )
-}
+  );
+};
 
-export { MetaData as default }
+export { MetaData as default };
