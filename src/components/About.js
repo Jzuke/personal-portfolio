@@ -39,7 +39,7 @@ const About = () => {
         left: "0%",
         top: "50%",
         width: "100%",
-        height: "50%",
+        height: "70vh",
         background: "#1ADAFF",
       });
     },

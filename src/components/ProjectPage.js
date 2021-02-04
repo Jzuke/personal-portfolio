@@ -25,7 +25,7 @@ const ProjectPage = () => {
           </h1>
           <h2 className="project-page-summary">{project.description}</h2>
           <figure className="header-image">
-            <FadeIn>
+          <FadeIn height={900}>
               {(onload) => (
                 <>
                   <img
