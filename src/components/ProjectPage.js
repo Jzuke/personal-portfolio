@@ -24,21 +24,21 @@ const ProjectPage = () => {
             {project.title.replace(/-/g, " ")}
           </h1>
           <h2 className="project-page-summary">{project.description}</h2>
-            <figure className="header-image">
-              <FadeIn>
-              { onload =>(
-              <>
-              <img
-                className="responsive"
-                src={`../img/${project.title}/header.jpg`}
-                onLoad = {onload}
-                alt={`${project.title} header`}
-              />
-              <figcaption>{project.imgCaptions.header}</figcaption>
-              </>
+          <figure className="header-image">
+            <FadeIn>
+              {(onload) => (
+                <>
+                  <img
+                    className="responsive"
+                    src={`../img/${project.title}/header.jpg`}
+                    onLoad={onload}
+                    alt={`${project.title} header`}
+                  />
+                  <figcaption>{project.imgCaptions.header}</figcaption>
+                </>
               )}
-              </FadeIn>
-            </figure>
+            </FadeIn>
+          </figure>
           <MetaData projectData={project} />
           <h3 className="summary">Summary</h3>
           <p className="project-page-content">{project.summary.paraOne}</p>
@@ -57,34 +57,38 @@ const ProjectPage = () => {
           ) : (
             <p className="project-page-content">{project.summary.paraFour}</p>
           )}
-
           <figure className="body-image">
-            <FadeIn>
-            { onload => (
-            	<img
-                src={`../img/${project.title}/one.jpg`}
-                onLoad = {onload}
-            	  alt={`${project.title} 2`}
-            	/>
+          <FadeIn>
+            {(onload) => (
+              <>
+                <img
+                  src={`../img/${project.title}/one.jpg`}
+                  onLoad={onload}
+                  alt={`${project.title} 2`}
+                />
+                <figcaption>{project.imgCaptions.one}</figcaption>
+              </>
             )}
-            </FadeIn>
-            <figcaption>{project.imgCaptions.one}</figcaption>
+          </FadeIn>
           </figure>
 
           {project.imgCaptions.two === undefined ? (
             ""
           ) : (
             <figure className="body-image">
-              <FadeIn>
-              { onload =>(
-                <img
-                  src={`../img/${project.title}/two.jpg`}
-                  onLoad = {onload}
-                  alt={`${project.title} 3`}
-                />
+            <FadeIn>
+              {(onload) => (
+                <>
+                  <img
+                    src={`../img/${project.title}/two.jpg`}
+                    onLoad={onload}
+                    alt={`${project.title} 3`}
+                  />
+
+                  <figcaption>{project.imgCaptions.two}</figcaption>
+                </>
               )}
-              </FadeIn>
-              <figcaption>{project.imgCaptions.two}</figcaption>
+            </FadeIn>
             </figure>
           )}
 
@@ -92,18 +96,18 @@ const ProjectPage = () => {
             ""
           ) : (
             <figure className="body-image">
-              <FadeIn>
-              { onload =>(
+            <FadeIn>
+              {(onload) => (
                 <>
-                <img
-                  src={`../img/${project.title}/three.jpg`}
-                  onLoad = {onload}
-                  alt={`${project.title} 4`}
-                />
-              <figcaption>{project.imgCaptions.three}</figcaption>
-              </>
+                  <img
+                    src={`../img/${project.title}/three.jpg`}
+                    onLoad={onload}
+                    alt={`${project.title} 4`}
+                  />
+                  <figcaption>{project.imgCaptions.three}</figcaption>
+                </>
               )}
-              </FadeIn>
+            </FadeIn>
             </figure>
           )}
 
@@ -111,18 +115,18 @@ const ProjectPage = () => {
             ""
           ) : (
             <figure className="body-image">
-              <FadeIn>
-              { onload =>(
+            <FadeIn>
+              {(onload) => (
                 <>
-                <img
-                  src={`../img/${project.title}/four.jpg`}
-                  onLoad = {onload}
-                  alt={`${project.title} 5`}
-                />
-              <figcaption>{project.imgCaptions.four}</figcaption>
-              </>
+                  <img
+                    src={`../img/${project.title}/four.jpg`}
+                    onLoad={onload}
+                    alt={`${project.title} 5`}
+                  />
+                  <figcaption>{project.imgCaptions.four}</figcaption>
+                </>
               )}
-              </FadeIn>
+            </FadeIn>
             </figure>
           )}
 
@@ -130,16 +134,18 @@ const ProjectPage = () => {
             ""
           ) : (
             <figure className="body-image">
-              <FadeIn>
-                { onload =>(
-                <img
-                  src={`../img/${project.title}/five.jpg`}
-                  onLoad = {onload}
-                  alt={`${project.title} 6`}
-                />
-                )}
-              </FadeIn>
-              <figcaption>{project.imgCaptions.five}</figcaption>
+            <FadeIn>
+              {(onload) => (
+                <>
+                  <img
+                    src={`../img/${project.title}/five.jpg`}
+                    onLoad={onload}
+                    alt={`${project.title} 6`}
+                  />
+                  <figcaption>{project.imgCaptions.five}</figcaption>
+                </>
+              )}
+            </FadeIn>
             </figure>
           )}
 
