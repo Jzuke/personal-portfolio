@@ -19,6 +19,7 @@
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.3.0",
+    "styled-components": "^5.2.1",
     "zuck.js": "^1.6.0"
   },
   "scripts": {
