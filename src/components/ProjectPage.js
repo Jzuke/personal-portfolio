@@ -5,7 +5,7 @@ import MetaData from "./MetaData";
 import Nav from "./Nav";
 import Contact from "./Contact";
 import { useLocation } from "react-router-dom";
-import FadeIn from "react-lazyload-fadein";
+import LazyLoad from "react-lazyload";
 
 const ProjectPage = () => {
   const location = useLocation();
@@ -25,19 +25,14 @@ const ProjectPage = () => {
           </h1>
           <h2 className="project-page-summary">{project.description}</h2>
           <figure className="header-image">
-            <FadeIn>
-              {(onload) => (
-                <>
+            <LazyLoad>
                   <img
                     className="responsive"
                     src={`../img/${project.title}/header.jpg`}
-                    onLoad={onload}
                     alt={`${project.title} header`}
                   />
+            </LazyLoad>
                   <figcaption>{project.imgCaptions.header}</figcaption>
-                </>
-              )}
-            </FadeIn>
           </figure>
           <MetaData projectData={project} />
           <h3 className="summary">Summary</h3>
@@ -58,37 +53,26 @@ const ProjectPage = () => {
             <p className="project-page-content">{project.summary.paraFour}</p>
           )}
           <figure className="body-image">
-          <FadeIn>
-            {(onload) => (
-              <>
-                <img
-                  src={`../img/${project.title}/one.jpg`}
-                  onLoad={onload}
-                  alt={`${project.title} 2`}
-                />
-                <figcaption>{project.imgCaptions.one}</figcaption>
-              </>
-            )}
-          </FadeIn>
+            <LazyLoad offset={3000}>
+                  <img
+                    src={`../img/${project.title}/one.jpg`}
+                    alt={`${project.title} 2`}
+                  />
+            </LazyLoad>
+                  <figcaption>{project.imgCaptions.one}</figcaption>
           </figure>
 
           {project.imgCaptions.two === undefined ? (
             ""
           ) : (
-            <figure className="body-image">
-            <FadeIn>
-              {(onload) => (
-                <>
-                  <img
-                    src={`../img/${project.title}/two.jpg`}
-                    onLoad={onload}
-                    alt={`${project.title} 3`}
-                  />
-
-                  <figcaption>{project.imgCaptions.two}</figcaption>
-                </>
-              )}
-            </FadeIn>
+            <figure className="body-image"> 
+              <LazyLoad offset={3000}>
+                    <img
+                      src={`../img/${project.title}/two.jpg`}
+                      alt={`${project.title} 3`}
+                    />
+                    </LazyLoad>
+                    <figcaption>{project.imgCaptions.two}</figcaption>
             </figure>
           )}
 
@@ -96,18 +80,13 @@ const ProjectPage = () => {
             ""
           ) : (
             <figure className="body-image">
-            <FadeIn>
-              {(onload) => (
-                <>
-                  <img
-                    src={`../img/${project.title}/three.jpg`}
-                    onLoad={onload}
-                    alt={`${project.title} 4`}
-                  />
-                  <figcaption>{project.imgCaptions.three}</figcaption>
-                </>
-              )}
-            </FadeIn>
+              <LazyLoad offset={3000}>
+                    <img
+                      src={`../img/${project.title}/three.jpg`}
+                      alt={`${project.title} 4`}
+                    />
+              </LazyLoad>
+                    <figcaption>{project.imgCaptions.three}</figcaption>
             </figure>
           )}
 
@@ -115,18 +94,13 @@ const ProjectPage = () => {
             ""
           ) : (
             <figure className="body-image">
-            <FadeIn>
-              {(onload) => (
-                <>
-                  <img
-                    src={`../img/${project.title}/four.jpg`}
-                    onLoad={onload}
-                    alt={`${project.title} 5`}
-                  />
-                  <figcaption>{project.imgCaptions.four}</figcaption>
-                </>
-              )}
-            </FadeIn>
+              <LazyLoad offset={3000}>
+                    <img
+                      src={`../img/${project.title}/four.jpg`}
+                      alt={`${project.title} 5`}
+                    />
+              </LazyLoad>
+                    <figcaption>{project.imgCaptions.four}</figcaption>
             </figure>
           )}
 
@@ -134,18 +108,13 @@ const ProjectPage = () => {
             ""
           ) : (
             <figure className="body-image">
-            <FadeIn>
-              {(onload) => (
-                <>
-                  <img
-                    src={`../img/${project.title}/five.jpg`}
-                    onLoad={onload}
-                    alt={`${project.title} 6`}
-                  />
-                  <figcaption>{project.imgCaptions.five}</figcaption>
-                </>
-              )}
-            </FadeIn>
+              <LazyLoad offset={3000}>
+                    <img
+                      src={`../img/${project.title}/five.jpg`}
+                      alt={`${project.title} 6`}
+                    />
+              </LazyLoad>
+                    <figcaption>{project.imgCaptions.five}</figcaption>
             </figure>
           )}
 

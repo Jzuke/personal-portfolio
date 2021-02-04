@@ -3,7 +3,7 @@ import Zuck from "zuck.js";
 import Nav from "./Nav";
 import Contact from "./Contact";
 import myProjects from "../data/myProjects";
-import FadeIn from "react-lazyload-fadein";
+import LazyLoad from "react-lazy-load";
 
 export default class SnapchatPage extends Component {
   constructor(props) {
@@ -738,19 +738,16 @@ export default class SnapchatPage extends Component {
           {project.description}
         </h2>
         <figure className="header-img">
-          <FadeIn>
-            {(onload) => (
-              <>
+          <LazyLoad>
+            <>
                 <img
                   className="responsive"
                   src={`../img/${project.title}/header.jpg`}
-                  onLoad = {onload}
                   alt={`${project.title} header`}
                 />
                 <figcaption>{project.imgCaptions.header}</figcaption>
-              </>
-            )}
-          </FadeIn>
+            </>
+          </LazyLoad>
         </figure>
         <h3 className="summary">Summary</h3>
         <p className="project-page-content full-grid">
