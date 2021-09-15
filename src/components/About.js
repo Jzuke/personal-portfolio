@@ -70,7 +70,7 @@ const About = () => {
     <>
       <animated.div className="about-container show-for-desktop" style={props}>
         <animated.div className="about-copy" style={textAnim}>
-          Currently a Product Designer at The Wall Street Journal. <br /> <br />
+          Currently a Product Designer at Morning Brew. <br /> <br />
           I'm a tinkerer and love experimenting with new tech, striving to
           create delightful experiences that are unique, simple and usable.{" "}
           <br /> <br />
