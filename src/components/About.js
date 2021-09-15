@@ -84,7 +84,7 @@ const About = () => {
         style={propsMobile}
       >
         <animated.div className="about-copy__mobile" style={textAnimMobile}>
-          Currently a Product Designer at The Wall Street Journal. <br /> <br />
+          Currently a Product Designer at Morning Brew. <br /> <br />
           I'm a tinkerer and love experimenting with new tech, striving to
           create delightful experiences that are unique, simple and usable.{" "}
           <br /> <br />
